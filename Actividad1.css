@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(100, 100, 235);
@@ -6,31 +5,49 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+
 }
 
-/* Estilo de los elementos de la lista */
+
+ul {
+    display: flex;
+    flex-direction: column; /* Mantiene los elementos en columna */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 10px; 
+
+}
+
+
 li {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    gap: 8px;
+    width: 200px; 
     padding: 10px;
-    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border-radius: 26px; 
 }
 
-/* Hover en lista */
+
 li:hover {
     background-color: blueviolet;
-    border-radius: 26px;
     transform: scale(1.05);
 }
 
-/* Hover en enlaces */
+
 a {
     text-decoration: none;
     color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    gap: 12px; 
 }
+
 
 a:hover {
     color: white;
@@ -41,14 +58,5 @@ a:hover {
 a:focus {
     outline: none;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilos en la lista */
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
+    transform: scale(1.05);
 }
